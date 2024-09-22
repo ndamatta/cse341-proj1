@@ -1,0 +1,12 @@
+# Get home route
+GET http://localhost:3000/
+
+###
+
+# Get all contacts
+GET http://localhost:3000/contacts/
+
+###
+
+# Get single contact
+GET http://localhost:3000/contacts/66ef3e8ae55b1d02129a8b40
