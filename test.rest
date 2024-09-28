@@ -1,27 +1,48 @@
 # Get home route
 GET http://localhost:3000/
-
 ###
-
 # Get all contacts
 GET http://localhost:3000/contacts/
-
 ###
-
 # Get single contact
 GET http://localhost:3000/contacts/66ef3e8ae55b1d02129a8b40
-
 ###
+#Create contact
+POST http://localhost:3000/contacts/
+Content-Type: application/json  
 
+{
+    "firstName": "Jacob",
+    "lastName": "Doe",
+    "email": "jacob.doe@example.com",
+    "favoriteColor": "Purple",
+    "birthday": "2005-07-12"
+}
+###
 # Update contact
-PUT http://localhost:3000/contacts/66ef3e8ae55b1d02129a8b40
+PUT http://localhost:3000/contacts/66f750a2ceac862171d353e4
 Content-Type: application/json  
 
 {
    "_id": "66ef3e8ae55b1d02129a8b40",
-    "firstName": "Jaden",
+    "firstName": "Maurice",
     "lastName": "Smith",
     "email": "jane.smith@example.com",
     "favoriteColor": "Red",
     "birthday": "1985-06-22"
 }
+###
+# Delete contact
+DELETE http://localhost:3000/contacts/66f75125ea341e333ef7af73
+Content-Type: application/json  
+
+{
+   "_id": "66ef3e8ae55b1d02129a8b40",
+    "firstName": "Maurice",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "favoriteColor": "Red",
+    "birthday": "1985-06-22"
+}
+
+
